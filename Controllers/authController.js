@@ -7,13 +7,13 @@ exports.Register = (req, res) => {
     if (!errors.isEmpty()) {
         return res.json({
             errors: errors.array(),
-            message: 'Incorrect data'
+            message: ''
         })
     }
     authService.Register(name, email, password)
         .then(data => res.send(data))
-        .catch(err => res.status(err.status).send(err.message))
-        .catch(() => res.status(500).send('Something went wrong. Try Again!'))
+        .catch(err => res.status().send())
+        .catch(() => res.status(500).send('. Try Again!'))
 }
 
 exports.Login = (req, res) => {

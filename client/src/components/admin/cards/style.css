@@ -1,41 +1,4 @@
-.dead {
-    height: 10px;
-    width: 10px;
-    margin-right: 0.375rem;
-    background-color: red;
-    border-radius: 50%;
-}
 
-.unknown {
-    height: 10px;
-    width: 10px;
-    margin-right: 0.375rem;
-    background-color: darkgray;
-    border-radius: 50%;
-}
-
-.alive {
-    height: 10px;
-    width: 10px;
-    margin-right: 0.375rem;
-    background-color: limegreen;
-    border-radius: 50%;
-}
-
-.card {
-    position: relative;
-}
-
-.btn-delete {
-    transition: .3s;
-    position: absolute;
-    right: -3%;
-    top: -7%;
-    z-index: 1000;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-}
 
 .btn-delete:hover {
     cursor: pointer;

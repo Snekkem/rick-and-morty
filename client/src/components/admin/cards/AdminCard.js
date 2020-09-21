@@ -61,15 +61,7 @@ const AdminCard = ({card, deleteCard, updateCard, isCreateSet, selectedCards, ep
 
         const sum = [days, hours, minutes].reduce((sum, value) => sum + value ? value : 0)
         if (!sum) {
-            return toast.error('Fill min extension time', {
-                position: "top-right",
-                autoClose: 2000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: 0,
-            })
+
         }
 
         createAuction({
