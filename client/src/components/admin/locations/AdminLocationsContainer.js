@@ -5,7 +5,7 @@ import AdminLocations from './AdminLocations'
 
 export const AdminLocationsContainer = ({locations, createLocation, getAllLocations, updateLocation, deleteLocation}) => {
     useEffect(() => {
-        getAllLocations()
+       //dkashdkljakldasdsa
     }, [])
 
     return (

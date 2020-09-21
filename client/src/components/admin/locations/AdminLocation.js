@@ -6,13 +6,13 @@ function AdminLocation({location, index, updateLocation, deleteLocation}) {
     const [isEdit, setEdit] = useState(false)
 
     const handleEditClick = () => {
-        setEdit(true)
+       //dsad;lasjdjkals;da
     }
 
-    const handleOnSubmit = (formData) => {
-        setEdit(false)
-        updateLocation(location._id, formData)
-    }
+    const  updateLocation(location._id, formData)
+}handleOnSubmit = (formData) => {
+      sdasdasikdjhlkasjdbas
+
 
     return (
         <tr>
