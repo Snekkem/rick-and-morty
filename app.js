@@ -1,5 +1,5 @@
 const express = require('express')
-const config = require('config')
+const path = require('path');
 const mongoose = require('mongoose')
 const keys = require('./vercel.json')
 const cors = require("cors");
@@ -20,6 +20,13 @@ app.use(express.static('./public'))
 
 app.use(bodyParser.json())
 app.use(cors())
+
+const publicPath = path.join(__dirname, '..', 'public');
+app.use(express.static(publicPath));
+
+app.get ('*', (req, res) => {
+    res.sendFile (path.join (publicPath, 'index.html'));
+});
 
 const adminRouter = require('./Routes/adminRouter');
 const authRouter = require("./Routes/authRouter");
