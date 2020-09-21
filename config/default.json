@@ -1,0 +1,8 @@
+{
+  "port": 5000,
+  "pathToImage": "http://localhost:5000/uploads/",
+  "roles": {
+    "admin": "Admin",
+    "user": "User"
+  }
+}
